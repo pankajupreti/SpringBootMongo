@@ -90,7 +90,8 @@
     </executions>
 </plugin>
 		</plugins>
-		<profiles>
+			</build>
+<profiles>
 		<profile>
             <id>prod</id>
             <build>
@@ -109,7 +110,5 @@
             </build>
         </profile>
 		</profiles>
-	</build>
-
 
 </project>
