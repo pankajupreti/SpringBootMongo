@@ -1,1 +1,4 @@
-web: java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.war
+web: java -Xmx384m -Xss512k -XX:+UseCompressedOops -jar target/*.jar 
+--spring.profiles.active=prod 
+--server.port=$PORT 
+--spring.data.mongodb.uri=$MONGODB_URI
